@@ -25,3 +25,11 @@
     float: left;
     width: 75%;
 }
+
+.number {
+    float: left;
+    width: 33.333%;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
