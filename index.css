@@ -8,7 +8,7 @@
     width: 50%;
     float: left;
     height: 100%;
-    background-color: yellow;
+    background-color: gray;
 }
 #results {
     width: 50%;
@@ -28,8 +28,25 @@
 
 .number {
     float: left;
-    width: 33.333%;
-    height: 50px;
+    width: 30%;
+    padding: 60px 0px;
     text-align: center;
-    margin-top: 20px;
+    margin: 10px 1.5%;
+    display: block; 
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+
 }
+
+#guessInput input, #guessSubmit button {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+
