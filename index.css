@@ -26,16 +26,15 @@
     width: 75%;
 }
 
-.number {
+.number, #deleteButton, #clearButton {
     float: left;
     width: 30%;
-    padding: 60px 0px;
+    padding: 47px 0px;
     text-align: center;
     margin: 10px 1.5%;
-    display: block; 
     background-color: black;
     color: white;
-    font-size: 30px;
+    font-size: 50px;
     border-radius: 10px;
 
 }
