@@ -43,10 +43,22 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script>
-            function numberClicked(event) {
-                console.log($(this).text());
-            }
             $('.number').click(numberClicked);
+            function numberClicked() {
+                var number = $(this).text();
+                var currentGuess = $('input[name="guess"]').val();
+                $('input[name="guess"]').val(currentGuess + number);
+            }
+            $('#clearButton').click(clearButtonClicked);
+            function clearButtonClicked() {
+                $('input[name="guess"]').val('');
+            }
+            $('#deleteButton').click(deleteButtonClicked);
+            function deleteButtonClicked() {
+                var currentGuess = $('input[name="guess"]').val();
+                var newGuess = currentGuess.slice(0,-1);
+                $('input[name="guess"]').val(newGuess);
+            } 
         </script>
     </body>
 </html>
